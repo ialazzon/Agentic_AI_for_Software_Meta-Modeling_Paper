@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.example.library:Library
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:org.eclipse.example.library="http:///org/eclipse/example/library.ecore"
+    name="City Library">
+
+  <writers
+      name="Agatha Christie"
+      books="//@books.0 //@books.1"/>
+
+  <writers
+      name="Isaac Asimov"
+      books="//@books.2"/>
+
+  <writers
+      name="Walter Isaacson"
+      books="//@books.3"/>
+
+  <books
+      title="Murder on the Orient Express"
+      category="MYSTERY"
+      author="//@writers.0"/>
+
+  <books
+      title="The A.B.C. Murders"
+      category="MYSTERY"
+      author="//@writers.0"/>
+
+  <books
+      title="Foundation"
+      category="ScienceFiction"
+      author="//@writers.1"/>
+
+  <books
+      title="Steve Jobs"
+      category="Biography"
+      author="//@writers.2"/>
+
+</org.eclipse.example.library:Library>

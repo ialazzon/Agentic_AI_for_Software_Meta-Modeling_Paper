@@ -1,0 +1,7 @@
+self.player->size() = 2
+self.player->exists(p | p.name = 'Alice')
+self.player->exists(p | p.name = 'Bob')
+self.matchups->size() = 1
+self.matchups.games->size() = 2
+self.matchups.games->at(1).player.name = 'Alice'
+self.matchups.games->at(2).player.name = 'Bob'

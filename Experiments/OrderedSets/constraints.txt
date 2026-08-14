@@ -1,0 +1,6 @@
+self.name = 'Alphabet'
+self.elements->size() = 4
+self.elements->exists(e | e.value = 'A' and e.next.value = 'B')
+self.elements->exists(e | e.value = 'B' and e.next.value = 'C')
+self.elements->exists(e | e.value = 'C' and e.next.value = 'D')
+self.elements->exists(e | e.value = 'D' and e.next.oclIsUndefined())

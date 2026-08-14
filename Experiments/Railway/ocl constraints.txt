@@ -1,0 +1,12 @@
+self.elements->size() = 8
+self.elements->select(e | e.oclIsKindOf(Segment))->size() = 3
+self.elements->select(e | e.oclIsKindOf(Signal))->size() = 2
+self.elements->select(e | e.oclIsKindOf(Turnout))->size() = 3
+self.elements->select(e | e.length = 15)->size() = 1
+self.elements->select(e | e.length = 10)->size() = 7
+self.elements->select(e | e.oclIsKindOf(Turnout)).oclAsType(Turnout)->select(t | t.from.oclIsKindOf(Signal) and t.straight.oclIsKindOf(Segment) and t.divergent.oclIsKindOf(Signal))->size() = 1
+self.elements->select(e | e.oclIsKindOf(Turnout)).oclAsType(Turnout)->select(t | t.from.oclIsKindOf(Segment) and t.straight.oclIsKindOf(Turnout) and t.divergent.oclIsKindOf(Segment))->size() = 1
+self.elements->select(e | e.oclIsKindOf(Turnout)).oclAsType(Turnout)->select(t | t.from.oclIsKindOf(Segment) and t.straight.oclIsKindOf(Turnout) and t.divergent.oclIsKindOf(Segment))->size() = 1
+self.elements->select(e | e.oclIsKindOf(Segment)).oclAsType(Segment)->forAll(s | s.connected->size() <= 2)
+self.start.oclIsKindOf(Signal)
+self.finish.oclIsKindOf(Signal)

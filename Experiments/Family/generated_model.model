@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geneology:Geneology xmlns:xmi="http://www.omg.org/XMI" xmlns:geneology="geneology" xmi:version="2.0">
+  <families name="Smith">
+    <members name="John"/>
+    <members name="Sarah" female="true"/>
+    <members name="Tom"/>
+    <members name="Emily" female="true"/>
+  </families>
+  <families name="Johnson">
+    <members name="Michael"/>
+    <members name="Emma" female="true"/>
+    <members name="David"/>
+  </families>
+</geneology:Geneology>

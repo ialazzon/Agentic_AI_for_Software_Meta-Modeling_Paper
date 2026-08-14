@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<automaton:Automaton xmlns:xmi="http://www.omg.org/XMI" xmlns:automaton="http://www.lpdql.org/automaton/1.0" name="package wrapper" xmi:version="2.0">
+  <states name="stand-by"/>
+  <states name="working"/>
+  <transitions name="turn on" event="//@inputs.0" actions="//@outputs.0" origin="//@states.0" destination="//@states.1"/>
+  <inputs name="packages"/>
+  <outputs name="wrapped packages"/>
+</automaton:Automaton>

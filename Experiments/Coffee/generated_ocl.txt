@@ -1,0 +1,11 @@
+self.children->select(c | c.oclIsKindOf(ControlUnit)).oclAsType(ControlUnit)->size() = 1
+self.children->select(c | c.oclIsKindOf(BrewingUnit)).oclAsType(BrewingUnit)->size() = 1
+self.children->select(c | c.oclIsKindOf(WaterTank)).oclAsType(WaterTank)->size() = 1
+self.children->select(c | c.oclIsKindOf(DipTray)).oclAsType(DipTray)->size() = 1
+self.children->select(c | c.oclIsKindOf(ControlUnit)).oclAsType(ControlUnit)->forAll(cu | cu.processor.clockSpeed = 3200 and cu.processor.numberOfCores = 4)
+self.children->select(c | c.oclIsKindOf(ControlUnit)).oclAsType(ControlUnit)->forAll(cu | cu.ram->size() = 1 and cu.ram->forAll(r | r.size = 8))
+self.children->select(c | c.oclIsKindOf(ControlUnit)).oclAsType(ControlUnit)->forAll(cu | cu.display <> null and cu.display.width = 128 and cu.display.height = 64)
+self.workflows->size() = 1
+self.workflows->forAll(w | w.nodes->select(n | n.oclIsKindOf(AutomaticTask)).oclAsType(AutomaticTask)->select(t | t.name = 'GrindBeans' and t.duration = 5)->size() = 1)
+self.workflows->forAll(w | w.nodes->select(n | n.oclIsKindOf(AutomaticTask)).oclAsType(AutomaticTask)->select(t | t.name = 'Brewing' and t.duration = 10)->size() = 1)
+self.workflows->forAll(w | w.nodes->select(n | n.oclIsKindOf(ManualTask)).oclAsType(ManualTask)->select(t | t.name = 'Pour Coffee' and t.duration = 3)->size() = 1)

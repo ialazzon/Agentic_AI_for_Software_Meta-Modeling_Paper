@@ -1,0 +1,5 @@
+self.name = 'The Face School'
+self.address = 'Munich'
+self.years->exists(y | y.startingDate = 2020 and y.schoolClasses->size() = 2)
+self.teachers->exists(t | t.name = 'Jack' and t.homeroomedClass.code = '1' and t.courses->exists(c | c.subject = 'Math' and c.weight = 10))
+self.teachers->exists(t | t.name = 'Sarah' and t.homeroomedClass.code = '2' and t.courses->exists(c | c.oclIsKindOf(SpecialisationCourse) and c.oclAsType(SpecialisationCourse).specialisation = 'Astrophysics' and c.weight = 20))

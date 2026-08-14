@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<examxml:Exam xmlns:xmi="http://www.omg.org/XMI" xmlns:examxml="http://examxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <elements xsi:type="examxml:OpenElement" question="a specific question"/>
+  <elements xsi:type="examxml:OpenElement" question="another specific question"/>
+  <elements xsi:type="examxml:OpenElement" specificQuestion1="question1" specificQuestion2="question2"/>
+  <elements xsi:type="examxml:MultipleChoiceElement"/>
+</examxml:Exam>

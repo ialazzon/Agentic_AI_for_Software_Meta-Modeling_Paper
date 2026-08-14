@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genealogy:Genealogy
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genealogy="http://www.example.org/genealogy">
+
+  <families surname="Smith">
+    <members name="John"/>
+    <members name="Sarah"/>
+    <members name="Tom"/>
+    <members name="Emily"/>
+  </families>
+
+  <families surname="Johnson">
+    <members name="Michael"/>
+    <members name="Emma"/>
+    <members name="David"/>
+  </families>
+
+</genealogy:Genealogy>

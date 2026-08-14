@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts:AddressBook
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:contacts="http://www.eclipse.org/e4/ui/demo/contacts.ecore">
+
+  <contacts
+      firstName="Jeff"
+      company="Fake Company"
+      jobTitle="CEO"
+      email="test1@email.com">
+    <workAddress
+        street="Willi-Graf-Str"
+        city="Munich"
+        state="Bavaria"
+        country="Germany"
+        zipCode="80805"/>
+    <phone
+        number="170-000-0000"
+        country="Germany"/>
+  </contacts>
+
+  <contacts
+      firstName="Jack"
+      company="Fake Company"
+      jobTitle="CFO"
+      email="test2@email.com">
+    <homeAddress
+        street="Willi-Graf-Str"
+        city="Munich"
+        state="Bavaria"
+        country="Germany"
+        zipCode="80805"/>
+    <mobile
+        number="170-000-0001"
+        country="Germany"/>
+  </contacts>
+
+</contacts:AddressBook>

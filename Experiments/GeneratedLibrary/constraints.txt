@@ -1,0 +1,5 @@
+self.writers->size() = 3
+self.writers->exists(w | w.name = 'Dashiell Hammett' and w.books->size() = 2 and w.books->exists(b | b.title = 'The Maltese Falcon' and b.pages = 224) and w.books->exists(b | b.title = 'Red Harvest' and b.pages = 224))
+self.writers->exists(w | w.name = 'Raymond Chandler' and w.books->size() = 2 and w.books->exists(b | b.title = 'The Big Sleep' and b.pages = 234) and w.books->exists(b | b.title = 'The High Window' and b.pages = 272))
+self.writers->exists(w | w.name = 'Ross Macdonald' and w.books->size() = 2 and w.books->exists(b | b.title = 'Meet Me at the Morgue' and b.pages = 241) and w.books->exists(b | b.title = 'The Far Side of the Dollar' and b.pages = 245))
+self.books->size() = 6

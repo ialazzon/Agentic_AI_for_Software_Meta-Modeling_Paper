@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attacktree:Model
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:attacktree="http://www.example.org/attacktree"
+    name="test tree"
+    description="test attack tree">
+
+  <rootNode
+      name="root"
+      description="root node"
+      domains="domain.com">
+
+    <vulnerabilities
+        name="v1"
+        description="v1"
+        type="Authentication"
+        severity="2"/>
+
+    <subNodes
+        name="right"
+        description="right node">
+
+      <vulnerabilities
+          name="RV"
+          description="right vulnerability"
+          severity="0"/>
+
+    </subNodes>
+
+    <subNodes
+        name="left"
+        description="left node"/>
+
+  </rootNode>
+
+</attacktree:Model>

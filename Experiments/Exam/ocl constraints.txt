@@ -1,0 +1,6 @@
+self.elements->size() = 4
+self.elements->select(e | e.oclIsKindOf(OpenElement))->size() = 3
+self.elements->select(e | e.oclIsKindOf(MultipleChoiceElement))->size() = 1
+self.elements->select(e | e.oclIsKindOf(OpenElement) and e.question = 'a specific question')->size() = 1
+self.elements->select(e | e.oclIsKindOf(OpenElement) and e.question = 'another specific question')->size() = 1
+self.elements->select(e | e.oclIsKindOf(OpenElement)).oclAsType(OpenElement)->select(oe | oe.specificQuestion1 = 'question1' and oe.specificQuestion2 = 'question2')->size() = 1

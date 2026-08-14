@@ -1,0 +1,11 @@
+self.name = 'test tree'
+self.description = 'test attack tree'
+self.rootNode <> null
+self.rootNode.name = 'root'
+self.rootNode.description = 'the root node'
+self.rootNode.domains->includes('domain.com')
+self.rootNode.vulnerabilities->size() = 1
+self.rootNode.vulnerabilities->exists(v | v.name = 'v1' and v.type = vulnerabilityType::Authentication and v.severity = 2)
+self.rootNode.subNodes->size() = 2
+self.rootNode.subNodes->exists(n | n.name = 'right' and n.description = 'the right node' and n.vulnerabilities->exists(v | v.name = 'RV' and v.description = 'the right vulnerability'))
+self.rootNode.subNodes->exists(n | n.name = 'left' and n.description = 'the left node' and n.vulnerabilities->isEmpty())

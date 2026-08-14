@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project:Foundation
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:project="http://www.eclipse.org/emf/project/1.0.0">
+
+  <projects
+      shortname="AIResearch"
+      longname="AIResearch"
+      start="2021-01-01T00:00:00.000Z"
+      end="2025-12-31T00:00:00.000Z"
+      devmail="ai-research@foundation.org"
+      homepage="www.ai-research.com"
+      projectleads="//@persons.0">
+    <committers
+        start="2022-01-01T00:00:00.000Z"
+        end="2023-12-31T00:00:00.000Z"
+        person="//@persons.0"/>
+  </projects>
+
+  <projects
+      shortname="CyberSecurity"
+      longname="CyberSecurity"
+      start="2022-05-01T00:00:00.000Z"
+      end="2026-05-01T00:00:00.000Z"
+      devmail="cybersecurity@foundation.org"
+      homepage="www.cybersecurity.org"
+      projectleads="//@persons.1">
+    <committers
+        start="2021-06-01T00:00:00.000Z"
+        end="2024-06-01T00:00:00.000Z"
+        person="//@persons.1"/>
+  </projects>
+
+  <persons
+      firstname="Alice"
+      lastname="Smith"
+      email="alice@example.com"
+      committerships="//@projects.0/@committers.0"/>
+
+  <persons
+      firstname="Bob"
+      lastname="Johnson"
+      email="bob@example.com"
+      committerships="//@projects.1/@committers.0"/>
+
+</project:Foundation>

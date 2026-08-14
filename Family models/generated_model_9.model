@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geneology:Geneology xmlns:xmi="http://www.omg.org/XMI" xmlns:geneology="geneology" xmi:version="2.0">
+  <families name="Howard">
+    <members name="Harry"/>
+    <members name="Helen" female="true"/>
+    <members name="Hannah" female="true"/>
+  </families>
+  <families name="Fisher">
+    <members name="Frank"/>
+    <members name="Fiona" female="true"/>
+    <members name="Fred"/>
+    <members name="Faith" female="true"/>
+    <members name="Felicity" female="true"/>
+  </families>
+  <families name="Reed">
+    <members name="Richard"/>
+    <members name="Rachel" female="true"/>
+  </families>
+  <families name="Grant">
+    <members name="George"/>
+    <members name="Grace" female="true"/>
+    <members name="Gina" female="true"/>
+    <members name="Gary"/>
+  </families>
+</geneology:Geneology>

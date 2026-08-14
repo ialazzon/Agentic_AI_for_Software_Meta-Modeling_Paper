@@ -1,0 +1,9 @@
+self.name = 'City Library'
+self.writers->size() = 3
+self.writers->exists(w | w.name = 'Agatha Christie' and w.books->size() = 2 and w.books->forAll(b | b.category = BookCategory::MYSTERY and (b.title = 'Murder on the Orient Express' or b.title = 'The A.B.C. Murders')))
+self.writers->exists(w | w.name = 'Isaac Asimov' and w.books->size() = 1 and w.books->exists(b | b.category = BookCategory::ScienceFiction and b.title = 'Foundation'))
+self.writers->exists(w | w.name = 'Walter Isaacson' and w.books->size() = 1 and w.books->exists(b | b.category = BookCategory::Biography and b.title = 'Steve Jobs'))
+self.books->size() >= 4
+self.books->exists(b | b.category = BookCategory::MYSTERY)
+self.books->exists(b | b.category = BookCategory::ScienceFiction)
+self.books->exists(b | b.category = BookCategory::Biography)

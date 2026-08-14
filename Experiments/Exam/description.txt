@@ -1,0 +1,2 @@
+The exam consists of four questions, including three open-ended questions and one multiple-choice question. The first open-ended question asks \"a specific question\", while the second open-ended question asks \"another specific question\". The third open-ended question consists of two parts: \"question1\" and \"question2\". Additionally, the exam includes a multiple-choice question without further details."
+	

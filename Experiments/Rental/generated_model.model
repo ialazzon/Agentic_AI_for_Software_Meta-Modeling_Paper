@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rental:RentalAgency xmlns:xmi="http://www.omg.org/XMI" xmlns:rental="http://com.opcoach.training/rental/1.0" xmi:id="522b083b-c98e-46f5-8bbf-e5b0409d7823" name="Toulouse Rental Agency" xmi:version="2.0">
+  <address xmi:id="1114d985-333d-4b15-afdc-6301280b8a45" zipCode="31100" city="Toulouse"/>
+  <objectsToRent xmi:id="84445a8f-efba-42bc-91bf-9389a51d8134" ID="1" name="Velo" available="true"/>
+  <customers xmi:id="8cafcabd-8ccc-4150-9cf1-5d0828dee96b" firstName="John">
+    <address xmi:id="a1bb2cda-1622-426e-a7d7-e459d206b748" zipCode="31100" city="Toulouse"/>
+  </customers>
+  <customers xmi:id="587ac50c-0652-4c31-a48c-f11523964aee" firstName="Tom">
+    <address xmi:id="fa8b9032-ee0c-4bff-bb31-47b4a6761fda" zipCode="31100" city="Toulouse"/>
+  </customers>
+  <rentals xmi:id="839e3348-6ebe-4de7-a737-516278882036" startDate="2011-11-30T00:00:00.000000" endDate="2011-12-02T00:00:00.000000" customer="587ac50c-0652-4c31-a48c-f11523964aee" rentedObject="84445a8f-efba-42bc-91bf-9389a51d8134"/>
+</rental:RentalAgency>

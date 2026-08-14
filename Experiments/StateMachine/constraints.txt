@@ -1,0 +1,17 @@
+self.name <> ''
+self.states->size() = 3
+self.states->exists(s | s.name = 'on')
+self.states->exists(s | s.name = 'off')
+self.states->exists(s | s.name = 'stand by')
+self.events->size() = 4
+self.events->exists(e | e.name = 'turn on')
+self.events->exists(e | e.name = 'pause')
+self.events->exists(e | e.name = 'turn off')
+self.events->exists(e | e.name = 'unpause')
+self.initialiState <> null
+self.initialiState.name = 'off'
+self.transitions->size() = 4
+self.transitions->exists(t | t.from.name = 'off' and t.event.name = 'turn on' and t.to.name = 'on')
+self.transitions->exists(t | t.from.name = 'on' and t.event.name = 'turn off' and t.to.name = 'off')
+self.transitions->exists(t | t.from.name = 'on' and t.event.name = 'pause' and t.to.name = 'stand by')
+self.transitions->exists(t | t.from.name = 'stand by' and t.event.name = 'unpause' and t.to.name = 'on')

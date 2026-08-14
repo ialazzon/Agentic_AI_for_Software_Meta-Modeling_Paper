@@ -1,0 +1,2 @@
+The state machine consists of three states: on, off, and stand by, along with four events: turn on, pause, turn off, and unpause. The system starts in the off state. When the turn on event occurs, it transitions to the on state. From the on state, the turn off event moves it back to off, while the pause event shifts it to stand by. If the system is in stand by, the unpause event returns it to the on state. These transitions define the dynamic behavior of the system.
+	

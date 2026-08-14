@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bowling:Tournament xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bowling="http://testmodel/bowling">
+  <matchups>
+    <games player="//@player.0"/>
+    <games player="//@player.1"/>
+  </matchups>
+  <player name="Alice"/>
+  <player name="Bob"/>
+</bowling:Tournament>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<attacktree:Model xmlns:xmi="http://www.omg.org/XMI" xmlns:attacktree="http://www.example.org/attacktree" name="test tree" description="test attack tree" xmi:version="2.0">
+  <rootNode name="root" description="the root node" domains="domain.com">
+    <vulnerabilities name="v1" description="Authentication vulnerability" type="Authentication" severity="2"/>
+    <subNodes name="right" description="the right node">
+      <vulnerabilities name="RV" description="the right vulnerability"/>
+    </subNodes>
+    <subNodes name="left" description="the left node"/>
+  </rootNode>
+</attacktree:Model>

@@ -1,0 +1,9 @@
+self.id = 101 implies self.person->size() = 4
+self.id = 101 implies self.person->select(p | p.name = 'John' and p.oclIsKindOf(Man))->size() = 1
+self.id = 101 implies self.person->select(p | p.name = 'Alice' and p.oclIsKindOf(Woman))->size() = 1
+self.id = 101 implies self.person->select(p | p.name = 'Bob' and p.oclIsKindOf(Man))->size() = 1
+self.id = 101 implies self.person->select(p | p.name = 'Emma' and p.oclIsKindOf(Woman))->size() = 1
+self.id = 101 implies self.person->select(p | p.name = 'John')->first().friend_with->select(f | f.name = 'Alice' or f.name = 'Bob')->size() = 2
+self.id = 101 implies self.person->select(p | p.name = 'Alice')->first().friend_with->select(f | f.name = 'John')->size() = 1
+self.id = 101 implies self.person->select(p | p.name = 'Bob')->first().friend_with->select(f | f.name = 'John')->size() = 1
+self.id = 101 implies self.person->select(p | p.name = 'Emma')->first().teacher_of = self

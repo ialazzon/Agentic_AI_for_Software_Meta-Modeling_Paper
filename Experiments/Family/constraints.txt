@@ -1,0 +1,11 @@
+self.families->size() = 2
+self.families->exists(f | f.name = 'Smith' and f.members->size() = 4)
+self.families->exists(f | f.name = 'Johnson' and f.members->size() = 3)
+self.families->select(f | f.name = 'Smith').members->exists(m | m.name = 'John' and m.female = false)
+self.families->select(f | f.name = 'Smith').members->exists(m | m.name = 'Sarah' and m.female = true)
+self.families->select(f | f.name = 'Smith').members->exists(m | m.name = 'Tom' and m.female = false)
+self.families->select(f | f.name = 'Smith').members->exists(m | m.name = 'Emily' and m.female = true)
+self.families->select(f | f.name = 'Johnson').members->exists(m | m.name = 'Michael' and m.female = false)
+self.families->select(f | f.name = 'Johnson').members->exists(m | m.name = 'Emma' and m.female = true)
+self.families->select(f | f.name = 'Johnson').members->exists(m | m.name = 'David' and m.female = false)
+self.families->forAll(f | f.members->forAll(m | m.family = f))

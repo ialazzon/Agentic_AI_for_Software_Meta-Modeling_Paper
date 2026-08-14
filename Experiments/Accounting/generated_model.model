@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.eclipsesource.accountin:Clients xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipsesource.accountin="http://eclipsesource.org/accounting" xmi:version="2.0">
+  <clients name="Andy">
+    <projects name="A">
+      <orders id="O-001" pricePerUnit="100.0">
+        <deliverables dueDate="2022-12-31T00:00:00.000000" unitAmount="5.0"/>
+      </orders>
+    </projects>
+  </clients>
+</org.eclipsesource.accountin:Clients>

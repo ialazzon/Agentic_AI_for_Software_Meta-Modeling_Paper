@@ -1,0 +1,10 @@
+self.name = 'Toulouse Rental Agency'
+self.address.city = 'Toulouse'
+self.address.zipCode = '31100'
+self.objectsToRent->size() = 1
+self.objectsToRent->exists(o | o.name = 'Velo' and o.available = true)
+self.customers->size() = 2
+self.customers->exists(c | c.firstName = 'John' and c.address.city = 'Toulouse' and c.address.zipCode = '31100')
+self.customers->exists(c | c.firstName = 'Tom' and c.address.city = 'Toulouse' and c.address.zipCode = '31100')
+self.rentals->size() = 1
+self.rentals->exists(r | r.customer.firstName = 'Tom' and r.rentedObject.name = 'Velo' and r.startDate.toString().substring(5,7) = 'Nov' and r.startDate.toString().substring(9,10) = '30' and r.startDate.toString().endsWith('2011') and r.endDate.toString().substring(5,7) = 'Dec' and r.endDate.toString().substring(9,10) = '02' and r.endDate.toString().endsWith('2011'))

@@ -1,0 +1,14 @@
+self.persons->size() = 3
+self.persons->exists(p | p.fullName = 'John Doe')
+self.persons->exists(p | p.fullName = 'Jane Smith')
+self.persons->exists(p | p.fullName = 'Michael Johnson')
+self.townHalls->size() = 1
+self.townHalls.workers->exists(w | w.fullName = 'Michael Johnson')
+self.townHalls.committee->notEmpty()
+self.townHalls.districts->exists(d | d.name = 'Downtown District')
+self.townHalls.districts->select(d | d.name = 'Downtown District').facilities->select(f | f.oclIsKindOf(Facility)).oclAsType(Facility)->exists(f | f.members->exists(m | m.fullName = 'John Doe'))
+self.townHalls.districts->select(d | d.name = 'Downtown District').facilities->select(f | f.oclIsKindOf(Facility)).oclAsType(Facility)->exists(f | f.members->exists(m | m.fullName = 'Jane Smith'))
+self.townHalls.districts->exists(d | d.name = 'Suburban District')
+self.townHalls.districts->select(d | d.name = 'Suburban District').facilities->select(f | f.oclIsKindOf(SpecialFacility)).oclAsType(SpecialFacility)->notEmpty()
+self.associations->exists(a | a.name = 'Cultural Association')
+self.associations->select(a | a.name = 'Cultural Association').committee->notEmpty()

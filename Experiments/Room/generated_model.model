@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<room:Room xmlns:xmi="http://www.omg.org/XMI" xmlns:room="/m2m/models/Room.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <doors/>
+  <lights xsi:type="room:Lamp" Type="Arkitektlampe"/>
+  <lights xsi:type="room:Candle" Colour="yellow"/>
+</room:Room>

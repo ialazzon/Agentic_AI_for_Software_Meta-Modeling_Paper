@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<greetings:GreetingsModel xmlns:xmi="http://www.omg.org/XMI" xmlns:greetings="http://www.example.org/greetings" xmi:version="2.0">
+  <greetings name="Hello"/>
+  <greetings name="Hi"/>
+  <greetings name="Good Morning"/>
+  <greetings name="Good Evening"/>
+</greetings:GreetingsModel>

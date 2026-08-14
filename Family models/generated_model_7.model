@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geneology:Geneology xmlns:xmi="http://www.omg.org/XMI" xmlns:geneology="geneology" xmi:version="2.0">
+  <families name="Campbell">
+    <members name="Carl"/>
+    <members name="Cindy" female="true"/>
+    <members name="Carla" female="true"/>
+  </families>
+  <families name="Mitchell">
+    <members name="Mike"/>
+    <members name="Molly" female="true"/>
+    <members name="Megan" female="true"/>
+    <members name="Matthew"/>
+    <members name="Melissa" female="true"/>
+  </families>
+  <families name="Adams">
+    <members name="Adam"/>
+  </families>
+  <families name="Baker">
+    <members name="Ben"/>
+    <members name="Beth" female="true"/>
+  </families>
+</geneology:Geneology>

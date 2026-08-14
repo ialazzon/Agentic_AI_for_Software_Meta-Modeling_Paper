@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geneology:Geneology xmlns:xmi="http://www.omg.org/XMI" xmlns:geneology="geneology" xmi:version="2.0">
+  <families name="Turner">
+    <members name="Timothy"/>
+    <members name="Tina" female="true"/>
+    <members name="Tara" female="true"/>
+    <members name="Tom"/>
+    <members name="Teresa" female="true"/>
+  </families>
+  <families name="Carter">
+    <members name="Chris"/>
+    <members name="Catherine" female="true"/>
+    <members name="Claire" female="true"/>
+  </families>
+  <families name="Phillips">
+    <members name="Patrick"/>
+    <members name="Patricia" female="true"/>
+  </families>
+</geneology:Geneology>

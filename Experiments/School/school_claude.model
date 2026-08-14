@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school:School xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:school="http://school.ecore" name="The Face School" address="Munich">
+  <years startingDate="2020">
+    <schoolClasses code="1" courses="//@courses.0" homeroomTeacher="//@teachers.0"/>
+    <schoolClasses code="2" courses="//@courses.1" homeroomTeacher="//@teachers.1"/>
+  </years>
+  <teachers name="Jack" courses="//@courses.0" homeroomedClass="//@years.0/@schoolClasses.0"/>
+  <teachers name="Sarah" courses="//@courses.1" homeroomedClass="//@years.0/@schoolClasses.1"/>
+  <courses subject="Math" weight="10" schoolClass="//@years.0/@schoolClasses.0"/>
+  <courses xsi:type="school:SpecialisationCourse" subject="Physics" weight="20" specialisation="Astrophysics" schoolClass="//@years.0/@schoolClasses.1"/>
+</school:School>

@@ -1,0 +1,2 @@
+The Toulouse Rental Agency operates in Toulouse (zip code 31100) and offers rental services. The agency has one rental object, a bicycle (Velo), available for rent. There are two customers, John and Tom, both residing in Toulouse (zip code 31100). A rental agreement was made for Tom, who rented the Velo from November 30, 2011, to December 2, 2011.
+	

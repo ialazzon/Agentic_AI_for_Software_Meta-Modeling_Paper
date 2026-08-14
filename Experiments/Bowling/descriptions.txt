@@ -1,0 +1,2 @@
+The tournament contains two players, Alice and Bob. It includes a single matchup, which consists of two games, where each game is associated with one of the players. Alice is linked to the first game, while Bob is linked to the second.
+	

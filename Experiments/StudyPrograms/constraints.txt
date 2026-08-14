@@ -1,0 +1,7 @@
+self.name = 'Computer Science'
+self.code <> ''
+self.programmes->exists(p | p.name = 'Software Engineering' and p.startYear = 2020 and p.duration = 3)
+self.programmes->select(p | p.name = 'Software Engineering').semesters->exists(s | s.year = 2021 and s.semesterType = SemesterType::Fall and s.courseAccess->exists(ca | ca.courses->exists(c | c.code = 'CS101' and c.name = 'Introduction to Programming' and c.ects = 7.5) and ca.courses->exists(c | c.code = 'CS102' and c.name = 'Data Structures' and c.ects = 7.5)))
+self.programmes->select(p | p.name = 'Software Engineering').semesters->exists(s | s.year = 2022 and s.semesterType = SemesterType::Spring and s.courseAccess->exists(ca | ca.courses->exists(c | c.code = 'CS201' and c.name = 'Algorithms' and c.level = Level::Master and ca.Access = Access::M1A)))
+self.programmes->select(p | p.name = 'Software Engineering').specialisations->exists(sp | sp.name = 'Artificial Intelligence' and sp.startSemester = 3 and sp.semesters->exists(s | s.year = 2023 and s.semesterType = SemesterType::Fall and s.courseAccess->exists(ca | ca.courses->exists(c | c.code = 'AI301' and c.name = 'Machine Learning'))))
+self.courses->exists(c | c.code = 'CS999' and c.name = 'Cybersecurity Fundamentals' and c.level = Level::Bachelor and c.availableSemester = AvailableSemesters::Both)

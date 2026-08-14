@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:CompanyModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:company="http://cs.gssi.it/company/R5">
+  <company name="Datastar">
+    <persons firstname="Max" lastname="Trump" assignedTo="//@company.0/@projects.0"/>
+    <persons firstname="Bastian" lastname="Stark" assignedTo="//@company.0/@projects.1"/>
+    <projects xsi:type="company:National" name="Concert" budget="10000" related="//@categories.0"/>
+    <projects xsi:type="company:European" name="Party" budget="5000" related="//@categories.0"/>
+  </company>
+  <categories/>
+</company:CompanyModel>

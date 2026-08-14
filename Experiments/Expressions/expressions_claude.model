@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expressions:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:expressions="http://www.informatik.hu-berlin.de/sam/meta-tools/expressions">
+  <functions name="AdditionFunction">
+    <parameters name="x"/>
+    <parameters name="y"/>
+    <body xsi:type="expressions:Plus">
+      <op1 xsi:type="expressions:ParameterAccess" parameter="//@functions.0/@parameters.0"/>
+      <op2 xsi:type="expressions:ParameterAccess" parameter="//@functions.0/@parameters.1"/>
+    </body>
+  </functions>
+  <functions name="MultiplicationFunction">
+    <parameters name="a"/>
+    <parameters name="b"/>
+    <body xsi:type="expressions:Mul">
+      <op1 xsi:type="expressions:ParameterAccess" parameter="//@functions.1/@parameters.0"/>
+      <op2 xsi:type="expressions:ParameterAccess" parameter="//@functions.1/@parameters.1"/>
+    </body>
+  </functions>
+  <functions name="NegationFunction">
+    <parameters name="value"/>
+    <body xsi:type="expressions:Neg">
+      <op xsi:type="expressions:ParameterAccess" parameter="//@functions.2/@parameters.0"/>
+    </body>
+  </functions>
+</expressions:Model>

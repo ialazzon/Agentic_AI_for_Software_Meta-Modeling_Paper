@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Friends:Classroom xmlns:xmi="http://www.omg.org/XMI" xmlns:Friends="Friends" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="101" xmi:version="2.0">
+  <person xsi:type="Friends:Man" name="John" friend_with="//@person.1 //@person.2"/>
+  <person xsi:type="Friends:Woman" name="Alice" friend_with="//@person.0"/>
+  <person xsi:type="Friends:Man" name="Bob" friend_with="//@person.0"/>
+  <person xsi:type="Friends:Woman" name="Emma" teacher_of="/"/>
+</Friends:Classroom>

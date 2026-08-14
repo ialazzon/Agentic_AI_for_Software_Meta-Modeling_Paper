@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statemachine:Statemachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:statemachine="http://www.xtext.org/example/statemachine/Statemachine" name="statemachine" initialiState="//@states.0">
+  <states name="off"/>
+  <states name="on"/>
+  <states name="stand by"/>
+  <events name="turn on"/>
+  <events name="pause"/>
+  <events name="turn off"/>
+  <events name="unpause"/>
+  <transitions from="//@states.0" event="//@events.0" to="//@states.1"/>
+  <transitions from="//@states.1" event="//@events.2" to="//@states.0"/>
+  <transitions from="//@states.1" event="//@events.1" to="//@states.2"/>
+  <transitions from="//@states.2" event="//@events.3" to="//@states.1"/>
+</statemachine:Statemachine>

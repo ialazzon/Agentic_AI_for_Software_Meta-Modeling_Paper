@@ -1,0 +1,11 @@
+self.name = 'package wrapper'
+self.states->size() = 2
+self.states->exists(s | s.name = 'stand-by')
+self.states->exists(s | s.name = 'working')
+self.transitions->size() = 1
+self.transitions->exists(t | t.name = 'turn on' and t.origin.name = 'stand-by' and t.destination.name = 'working')
+self.inputs->size() = 1
+self.inputs->exists(i | i.name = 'packages')
+self.outputs->size() = 1
+self.outputs->exists(o | o.name = 'wrapped packages')
+self.transitions->exists(t | t.name = 'turn on' and t.event.name = 'packages' and t.actions->exists(a | a.name = 'wrapped packages'))

@@ -1,0 +1,8 @@
+self.title = 'Textbook'
+self.chapters->size() = 2
+self.chapters->at(1).title = 'Chapter 1'
+self.chapters->at(1).nbPages = 2
+self.chapters->at(1).author = 'Max'
+self.chapters->at(2).title = 'Chapter 2'
+self.chapters->at(2).nbPages = 9
+self.chapters->at(2).author = 'Min'

@@ -1,0 +1,10 @@
+self.company->select(c | c.name = 'Datastar').persons->size() = 2
+self.company->select(c | c.name = 'Datastar').persons->exists(p | p.firstname = 'Max' and p.lastname = 'Trump')
+self.company->select(c | c.name = 'Datastar').persons->exists(p | p.firstname = 'Bastian' and p.lastname = 'Stark')
+self.company->select(c | c.name = 'Datastar').projects->size() = 2
+self.company->select(c | c.name = 'Datastar').projects->exists(p | p.name = 'Concert')
+self.company->select(c | c.name = 'Datastar').projects->exists(p | p.name = 'Party')
+self.company->select(c | c.name = 'Datastar').persons->select(p | p.firstname = 'Max' and p.lastname = 'Trump').assignedTo->exists(a | a.name = 'Concert')
+self.company->select(c | c.name = 'Datastar').persons->select(p | p.firstname = 'Bastian' and p.lastname = 'Stark').assignedTo->exists(a | a.name = 'Party')
+self.company->select(c | c.name = 'Datastar').projects->select(p | p.oclIsKindOf(National)).oclAsType(National)->exists(n | n.name = 'Concert' and n.budget = 10000)
+self.company->select(c | c.name = 'Datastar').projects->select(p | p.oclIsKindOf(European)).oclAsType(European)->exists(e | e.name = 'Party' and e.budget = 5000)

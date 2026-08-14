@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<railwaypackage:RailwayLayout
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:railwaypackage="prolan.example.railwaypackage">
+
+  <start length="10"/>
+
+  <finish length="10"/>
+
+  <elements xsi:type="railwaypackage:Segment"
+            length="15"
+            connected="//@elements.2 //@finish"/>
+
+  <elements xsi:type="railwaypackage:Segment"
+            length="10"
+            connected="//@elements.5"/>
+
+  <elements xsi:type="railwaypackage:Segment"
+            length="10"
+            connected="//@elements.6"/>
+
+  <elements xsi:type="railwaypackage:Signal"
+            length="10"
+            connected="//@elements.0"/>
+
+  <elements xsi:type="railwaypackage:Signal"
+            length="10"
+            connected="//@elements.1"/>
+
+  <elements xsi:type="railwaypackage:Turnout"
+            length="10"
+            from="//@start"
+            straight="//@elements.0"
+            divergent="//@elements.3"/>
+
+  <elements xsi:type="railwaypackage:Turnout"
+            length="10"
+            from="//@elements.0"
+            straight="//@elements.7"
+            divergent="//@elements.1"/>
+
+  <elements xsi:type="railwaypackage:Turnout"
+            length="10"
+            from="//@elements.1"
+            straight="//@elements.6"
+            divergent="//@elements.2"/>
+
+</railwaypackage:RailwayLayout>

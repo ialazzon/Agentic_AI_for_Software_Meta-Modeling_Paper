@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Persons:Community xmlns:xmi="http://www.omg.org/XMI" xmlns:Persons="http://Persons" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <persons xsi:type="Persons:Man" fullName="John Doe"/>
+  <persons xsi:type="Persons:Woman" fullName="Jane Smith"/>
+  <persons xsi:type="Persons:Man" fullName="Michael Johnson"/>
+  <townHalls name="Central Town Hall" workers="//@persons.2">
+    <committee name="Community Development Committee"/>
+    <districts name="Downtown District">
+      <facilities xsi:type="Persons:OrdinaryFacility" name="Public Library" members="//@persons.0"/>
+      <facilities xsi:type="Persons:OrdinaryFacility" name="Community Center" members="//@persons.1"/>
+    </districts>
+    <districts name="Suburban District">
+      <facilities xsi:type="Persons:SpecialFacility" name="Sports Complex"/>
+    </districts>
+  </townHalls>
+  <associations name="Cultural Association" committee="//@townHalls.0/@committee"/>
+</Persons:Community>

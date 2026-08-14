@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.exercise.studyprograms:Department
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:org.eclipse.exercise.studyprograms="https://org/eclipse/exercise/studyprograms"
+    name="Computer Science Department">
+
+  <programmes
+      name="Software Engineering Programme"
+      startYear="2020"
+      duration="3">
+
+    <semesters
+        year="2021"
+        semesterType="Fall">
+      <courseAccess>
+        <courses code="CS101"
+                 name="Introduction to Programming"
+                 ects="7.5"
+                 level="Bachelor"
+                 availableSemester="Fall"/>
+        <courses code="CS102"
+                 name="Data Structures"
+                 ects="7.5"
+                 level="Bachelor"
+                 availableSemester="Fall"/>
+      </courseAccess>
+    </semesters>
+
+    <semesters
+        year="2022"
+        semesterType="Spring">
+      <courseAccess Access="M1A">
+        <courses code="CS201"
+                 name="Algorithms"
+                 ects="7.5"
+                 level="Master"
+                 availableSemester="Spring"/>
+      </courseAccess>
+    </semesters>
+
+    <specialisations
+        name="Artificial Intelligence"
+        startSemester="3">
+
+      <semesters
+          year="2023"
+          semesterType="Fall">
+        <courseAccess>
+          <courses code="AI301"
+                   name="Machine Learning"
+                   ects="7.5"
+                   level="Bachelor"
+                   availableSemester="Fall"/>
+        </courseAccess>
+      </semesters>
+
+    </specialisations>
+
+  </programmes>
+
+  <courses
+      code="CS999"
+      name="Cybersecurity Fundamentals"
+      ects="7.5"
+      level="Bachelor"
+      availableSemester="Both"/>
+
+</org.eclipse.exercise.studyprograms:Department>

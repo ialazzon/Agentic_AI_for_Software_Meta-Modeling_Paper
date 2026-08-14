@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.eclipse.exercise.studyprograms:Department xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.exercise.studyprograms="https://org/eclipse/exercise/studyprograms" code="CS" name="Computer Science" xmi:version="2.0">
+  <programmes name="Software Engineering" code="SE" startYear="2020" duration="3">
+    <specialisations name="Artificial Intelligence" startSemester="3">
+      <semesters year="2023">
+        <courseAccess courses="//@courses.3"/>
+      </semesters>
+    </specialisations>
+    <semesters year="2021">
+      <courseAccess courses="//@courses.0 //@courses.1"/>
+    </semesters>
+    <semesters year="2022" semesterType="Spring">
+      <courseAccess Access="M1A" courses="//@courses.2"/>
+    </semesters>
+  </programmes>
+  <courses code="CS101" name="Introduction to Programming" ects="7.5"/>
+  <courses code="CS102" name="Data Structures" ects="7.5"/>
+  <courses code="CS201" name="Algorithms" ects="7.5" level="Master" availableSemester="Spring"/>
+  <courses code="AI301" name="Machine Learning" ects="7.5" level="Master"/>
+  <courses code="CS999" name="Cybersecurity Fundamentals" ects="7.5" availableSemester="Both"/>
+</org.eclipse.exercise.studyprograms:Department>

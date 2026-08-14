@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basicfamily:Family
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:basicfamily="http://www.eclipse.org/sirius/sample/basicfamily"
+    name="Smith">
+
+  <members xsi:type="basicfamily:Man"
+           name="Jack"
+           children="//@members.2 //@members.3"/>
+
+  <members xsi:type="basicfamily:Woman"
+           name="Sarah"
+           children="//@members.2 //@members.3"/>
+
+  <members xsi:type="basicfamily:Man"
+           name="Tom"
+           parents="//@members.0 //@members.1"/>
+
+  <members xsi:type="basicfamily:Man"
+           name="Jack Jr."
+           parents="//@members.0 //@members.1"/>
+
+</basicfamily:Family>

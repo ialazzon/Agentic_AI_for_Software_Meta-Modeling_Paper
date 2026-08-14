@@ -1,0 +1,1 @@
+The automaton, called package wrapper, consists of two states: stand-by and working. It has a transition named turn on, which moves the system from the stand-by state to the working state. This transition is triggered by an input called packages and results in an output called wrapped packages.

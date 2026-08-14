@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Book:Book xmlns:xmi="http://www.omg.org/XMI" xmlns:Book="http://Book" title="Textbook" xmi:version="2.0">
+  <chapters title="Chapter 1" nbPages="2" author="Max"/>
+  <chapters title="Chapter 2" nbPages="9" author="Min"/>
+</Book:Book>

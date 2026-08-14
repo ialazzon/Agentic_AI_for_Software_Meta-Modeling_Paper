@@ -1,0 +1,6 @@
+self.name = 'Smith'
+self.members->size() = 4
+self.members->exists(p | p.name = 'Jack' and p.oclIsKindOf(Man) and p.children->exists(c | c.name = 'Tom' or c.name = 'Jack Jr.'))
+self.members->exists(p | p.name = 'Sarah' and p.oclIsKindOf(Woman) and p.children->exists(c | c.name = 'Tom' or c.name = 'Jack Jr.'))
+self.members->exists(p | p.name = 'Tom' and p.parents->exists(parent | parent.name = 'Jack' or parent.name = 'Sarah'))
+self.members->exists(p | p.name = 'Jack Jr.' and p.parents->exists(parent | parent.name = 'Jack' or parent.name = 'Sarah'))

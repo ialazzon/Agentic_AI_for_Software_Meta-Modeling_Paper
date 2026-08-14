@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<accounting:Clients xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:accounting="http://eclipsesource.org/accounting">
+  <clients name="Andy">
+    <projects name="A">
+      <orders id="O-001" pricePerUnit="100.0">
+        <deliverables unitAmount="5.0"/>
+      </orders>
+    </projects>
+  </clients>
+</accounting:Clients>

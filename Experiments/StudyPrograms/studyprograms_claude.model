@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studyprograms:Department xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:studyprograms="https://org/eclipse/exercise/studyprograms" name="Computer Science Department">
+  <programmes name="Software Engineering Programme" startYear="2020" duration="3">
+    <specialisations name="Artificial Intelligence" startSemester="3">
+      <semesters year="2023" semesterType="Fall">
+        <courseAccess courses="//@courses.3"/>
+      </semesters>
+    </specialisations>
+    <semesters year="2021" semesterType="Fall">
+      <courseAccess courses="//@courses.0 //@courses.1"/>
+    </semesters>
+    <semesters year="2022" semesterType="Spring">
+      <courseAccess Access="M1A" courses="//@courses.2"/>
+    </semesters>
+  </programmes>
+  <courses code="CS101" name="Introduction to Programming" ects="7.5" level="Bachelor" availableSemester="Fall"/>
+  <courses code="CS102" name="Data Structures" ects="7.5" level="Bachelor" availableSemester="Fall"/>
+  <courses code="CS201" name="Algorithms" level="Master" availableSemester="Spring"/>
+  <courses code="AI301" name="Machine Learning" availableSemester="Fall"/>
+  <courses code="CS999" name="Cybersecurity Fundamentals" level="Bachelor" availableSemester="Both"/>
+</studyprograms:Department>

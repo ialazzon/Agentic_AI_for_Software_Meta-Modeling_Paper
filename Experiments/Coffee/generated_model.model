@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.eclipsesource.modelserver.coffee.model:Machine xmlns:xmi="http://www.omg.org/XMI" xmlns:com.eclipsesource.modelserver.coffee.model="http://www.eclipsesource.com/modelserver/example/coffeemodel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="EspressoMaster3000" xmi:version="2.0">
+  <workflows>
+    <nodes xsi:type="com.eclipsesource.modelserver.coffee.model:AutomaticTask" name="GrindBeans" duration="5" component="//@children.1"/>
+    <nodes xsi:type="com.eclipsesource.modelserver.coffee.model:AutomaticTask" name="Brewing" duration="10"/>
+    <nodes xsi:type="com.eclipsesource.modelserver.coffee.model:ManualTask" name="Pour Coffee" duration="3"/>
+    <flows source="//@workflows.0/@nodes.0" target="//@workflows.0/@nodes.1"/>
+    <flows source="//@workflows.0/@nodes.1" target="//@workflows.0/@nodes.2"/>
+  </workflows>
+  <children xsi:type="com.eclipsesource.modelserver.coffee.model:ControlUnit" userDescription="Control Unit">
+    <processor clockSpeed="3200" numberOfCores="4"/>
+    <dimension/>
+    <ram clockSpeed="1600" size="8"/>
+    <display width="128" height="64"/>
+  </children>
+  <children xsi:type="com.eclipsesource.modelserver.coffee.model:BrewingUnit"/>
+  <children xsi:type="com.eclipsesource.modelserver.coffee.model:WaterTank"/>
+  <children xsi:type="com.eclipsesource.modelserver.coffee.model:DipTray"/>
+</com.eclipsesource.modelserver.coffee.model:Machine>

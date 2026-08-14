@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coffee:Machine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:coffee="http://www.eclipsesource.com/modelserver/example/coffeemodel"
+    name="EspressoMaster3000">
+
+  <children xsi:type="coffee:ControlUnit">
+    <processor clockSpeed="3200" numberOfCores="4"/>
+    <ram size="8"/>
+    <display width="128" height="64"/>
+  </children>
+
+  <children xsi:type="coffee:BrewingUnit"/>
+
+  <children xsi:type="coffee:WaterTank"/>
+
+  <children xsi:type="coffee:DipTray"/>
+
+  <workflows>
+    <nodes xsi:type="coffee:AutomaticTask"
+           name="GrindBeans"
+           duration="5"
+           component="//@children.1"/>
+    <nodes xsi:type="coffee:AutomaticTask"
+           name="Brewing"
+           duration="10"/>
+    <nodes xsi:type="coffee:ManualTask"
+           name="Pour Coffee"
+           duration="3"/>
+  </workflows>
+
+</coffee:Machine>

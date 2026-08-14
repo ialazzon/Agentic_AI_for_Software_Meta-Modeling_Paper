@@ -1,0 +1,1 @@
+self.clients->exists(c | c.name = 'Andy' and c.projects->exists(p | p.name = 'A' and p.orders->exists(o | o.id = 'O-001' and o.pricePerUnit = 100.0 and o.deliverables->exists(d | d.unitAmount = 5.0))))

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rental:RentalAgency
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rental="http://com.opcoach.training/rental/1.0"
+    name="Toulouse Rental Agency">
+
+  <address
+      city="Toulouse"
+      zipCode="31100"/>
+
+  <objectsToRent
+      ID="1"
+      name="Velo"
+      available="true"/>
+
+  <customers
+      firstName="John"
+      name="John">
+    <address
+        city="Toulouse"
+        zipCode="31100"/>
+  </customers>
+
+  <customers
+      firstName="Tom"
+      name="Tom">
+    <address
+        city="Toulouse"
+        zipCode="31100"/>
+  </customers>
+
+  <rentals
+      customer="//@customers.1"
+      rentedObject="//@objectsToRent.0"
+      startDate="2011-11-30T00:00:00.000Z"
+      endDate="2011-12-02T00:00:00.000Z"/>
+
+</rental:RentalAgency>

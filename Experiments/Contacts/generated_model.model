@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<contacts:UoD xmlns:xmi="http://www.omg.org/XMI" xmlns:contacts="http://www.eclipse.org/e4/ui/demo/contacts.ecore" xmi:version="2.0">
+  <allAddressBooks>
+    <contacts firstName="Jeff" company="Fake Company" jobTitle="CEO" email="test1@email.com">
+      <workAddress street="Willi-Graf-Str" city="Munich" state="Bavaria" country="Germany" zipCode="80805"/>
+      <phone number="170-000-0000" country="Germany"/>
+    </contacts>
+    <contacts firstName="Jack" company="Fake Company" jobTitle="CFO" email="test2@email.com">
+      <mobile number="170-000-0001" country="Germany"/>
+      <homeAddress street="Willi-Graf-Str" city="Munich" state="Bavaria" country="Germany" zipCode="80805"/>
+    </contacts>
+  </allAddressBooks>
+</contacts:UoD>

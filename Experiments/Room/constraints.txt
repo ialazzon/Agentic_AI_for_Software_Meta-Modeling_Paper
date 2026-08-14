@@ -1,0 +1,3 @@
+self.doors->size() = 1
+self.lights->select(l | l.oclIsKindOf(Lamp)).oclAsType(Lamp)->exists(l | l.Type = 'Arkitektlampe')
+self.lights->select(l | l.oclIsKindOf(Candle)).oclAsType(Candle)->exists(c | c.Colour = 'yellow')

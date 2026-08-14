@@ -1,0 +1,2 @@
+The attack tree model, called test tree, is described as a test attack tree. It consists of a root node named root, which is described as the root node. The root node has the domain domain.com. This root node contains a vulnerability named v1, classified as Authentication, with a severity level of 2. The root node has two sub-nodes: a right node named right, described as the right node, which contains a vulnerability named RV, described as the right vulnerability, and a left node named left, described as the left node.
+	

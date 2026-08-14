@@ -1,0 +1,2 @@
+School named 'The Face School', located in Munich, offers educational programs for students. The school year starts in 2020 and includes two school classes. Class 1 is taught by Jack, who serves as the homeroom teacher, and offers a Math course with a weight of 10. Class 2 is led by Sarah, who also serves as the homeroom teacher, and provides a specialized Physics course with a focus on Astrophysics, weighted at 20. The school has a structured system with teachers assigned to specific classes and subjects.
+	
