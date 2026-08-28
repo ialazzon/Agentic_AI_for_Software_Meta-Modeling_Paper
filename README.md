@@ -63,6 +63,9 @@ pip install -r requirements.txt
 
 The repository also includes a **video containing sample runs of the agentic framework**. The demonstration illustrates the execution workflow and the generation and validation of model instances from Ecore metamodels and natural-language specifications.
 
+
 ## Reproducibility
 
 The repository is intended to support reproducibility of the experiments reported in the accompanying journal paper. It provides the benchmark metamodels, input descriptions, OCL constraints, generated models, baseline outputs, implementation source code, and demonstration material used in the evaluation.
+
+[Try the tool using the Gradio live interface](https://007f311bde6d5e5255.gradio.live)
