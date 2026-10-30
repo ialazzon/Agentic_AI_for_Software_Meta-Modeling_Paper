@@ -68,4 +68,4 @@ The repository also includes a **video containing sample runs of the agentic fra
 
 The repository is intended to support reproducibility of the experiments reported in the accompanying journal paper. It provides the benchmark metamodels, input descriptions, OCL constraints, generated models, baseline outputs, implementation source code, and demonstration material used in the evaluation.
 
-[Try the tool using the Gradio live interface](https://028d85bd5fbee53feb.gradio.live)
+[Try the tool using the Gradio live interface](https://018b463246bbf73960.gradio.live)
